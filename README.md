@@ -42,8 +42,8 @@ Make it easier for developers to create their own visualization using D3 and Ado
             'type' : 'bubble',              // Type of D3 chart
             'id' : 'bubblechart-container'  //HTML div to which chart needs to be rendered
         },
-        'api' : {                                   // https://git.corp.adobe.com/AnalyticsIO/analyticsiolab2018
-                                                    // https://git.corp.adobe.com/pages/AdobeAnalyticsWeb/analytics_services_devportal/reference-guide/html/analytics-api-reference-guide.html#_reportfilter
+        'api' : {                                   // https://github.com/AdobeDocs/analytics-2.0-apis
+                                                    
                 'rsid' : ' report-suite-ID',
                 'end-point' : '/reports/ranked',
                 'dimension' : 'variables/browser',
@@ -87,21 +87,21 @@ Make it easier for developers to create their own visualization using D3 and Ado
    ```
 
 ## <a name="Contributing"> Contributing: </a>
-If you would like to contribute to this project in the form of filing issues, fixing bugs and creating pull requests. Please follow [this](https://git.corp.adobe.com/tel55924/d3-dashboard-api/blob/master/CONTRIBUTING.md) document. Please also check our [code of conduct](https://git.corp.adobe.com/tel55924/d3-dashboard-api/blob/master/CODE_OF_CONDUCT.md)   
+If you would like to contribute to this project in the form of filing issues, fixing bugs and creating pull requests. Please follow [this](https://github.com/adobe/d3-dashboard-api/blob/master/CONTRIBUTING.md) document. Please also check our [code of conduct](https://github.com/adobe/d3-dashboard-api/blob/master/CODE_OF_CONDUCT.md)   
 ### <a name="AddChart"> Steps to add a chart: </a>
   
   1) Clone this repository
   2) Run `npm install`
-  3) Add a chart class(in a js file) to [/public/js/](https://git.corp.adobe.com/tel55924/d3-dashboard-api/tree/npm_package/public/js). 
-  4) Associate your chart class name with it's repective file name inside chartMapping dictionary [/configs/mapping.js](https://git.corp.adobe.com/tel55924/d3-dashboard-api/blob/npm_package/configs/mapping.js)
+  3) Add a chart class(in a js file) to [/public/js/](https://github.com/adobe/d3-dashboard-api/tree/master/public/js). 
+  4) Associate your chart class name with it's repective file name inside chartMapping dictionary [/configs/mapping.js](https://github.com/adobe/d3-dashboard-api/blob/master/configs/mapping.js)
   5) [Build it](#Build)
   
 ### <a name="AddAPI"> Steps to add an Adobe Anlytics API: </a>
 
   1) Clone this repository
   2) Run `npm install`
-  3) Add an API class(in a js file) to [/utils/](https://git.corp.adobe.com/tel55924/ad3-dashboard-api/tree/npm_package/utils). 
-  4) Associate your API class name with it's repective file name inside apiMapping dictionary [/configs/mapping.js](https://git.corp.adobe.com/tel55924/d3-dashboard-api/blob/npm_package/configs/mapping.js)
+  3) Add an API class(in a js file) to [/utils/](https://github.com/adobe/d3-dashboard-api/tree/master/utils). 
+  4) Associate your API class name with it's repective file name inside apiMapping dictionary [/configs/mapping.js](https://github.com/adobe/d3-dashboard-api/blob/master/configs/mapping.js)
   5) [Build it](#Build)
   
 ### <a name="Build"> Build It: </a>
@@ -110,5 +110,5 @@ If you would like to contribute to this project in the form of filing issues, fi
 
 ## <a name="License"> License: </a>
 
-Licensed under [Apache-2](https://git.corp.adobe.com/tel55924/d3-dashboard-api/blob/master/LICENSE)
+Licensed under [Apache-2](https://github.com/adobe/d3-dashboard-api/blob/master/LICENSE)
 
