@@ -1,0 +1,30 @@
+{
+  "name": "d3-dashboard-api",
+  "version": "1.0.0",
+  "description": "JavaScript library to create custom visualizations using D3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "browserify -t bulkify index.js --s dashboard | uglifyjs  > d3-dashboard-api.min.js",
+    "browserify" : "./node_modules/.bin/browserify",
+    "uglifyjs" : "./node_modules/.bin/uglifyjs" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe/d3-dashboard-api.git"
+  },
+  "author": "abhishek chandran",
+  "license": "ISC",
+  "dependencies": {
+    "bulk-require": "^1.0.1",
+    "d3v4": "^4.2.2",
+    "jsdom": "^11.11.0",
+    "superagent": "^3.8.3"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "bulkify": "^1.4.2",
+    "uglify-es": "^3.3.9"
+  }
+}
