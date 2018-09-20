@@ -15,15 +15,17 @@ Make it easier for developers to create their own visualization using D3 and Ado
 5) [License](#License)
 
 ## <a name="Steps"> Steps to run: </a>
-  1) Get an access token for Analytics APIs with Anlytics Scopes: **openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function** - [Postman (OAuth2.0)](https://www.getpostman.com/docs/v6/postman/sending_api_requests/authorization) or [Adobe I/O Playground](https://runtime.adobe.io/api/v1/web/io-solutions/adobe-oauth-playground/oauth.html) can be used    
-  2) Load d3-dashboard-api.min.js from this repo in your html file.       
-  3) Create three variables - query, file, company, accessToken:         
+  1) On [Adobe I/O Console](https://console.adobe.io) [create an Integration](https://github.com/adobe/d3-dashboard-api/wiki/Create-Integration-on-Adobe-I-O-Console)
+  2) Use `Cleint ID` and `Cleint Secret` to generate an access token. [Postman (OAuth2.0)](https://www.getpostman.com/docs/v6/postman/sending_api_requests/authorization) or [Adobe I/O Playground](https://runtime.adobe.io/api/v1/web/io-solutions/adobe-oauth-playground/oauth.html) can be used.      
+  Anlytics Scopes: **openid,AdobeID,read_organizations,additional_info.projectedProductContext,additional_info.job_function**  
+  3) Load d3-dashboard-api.min.js from this repo in your html file.       
+  4) Create three variables - query, file, company, accessToken:         
       - query : dictionary of dictionaries with chart details(html div id and type of chart) and api configuration(filters, dimensions etc.)   
       - company : org's name for e.g. adobe-io-solutions-demo    
       - accessToken : Token from step 1      
      [Refer sample code](#SampleCode)
-  4) In the HTML file create the divs with IDs mentioned in query.chart.id
-  5) Call `dashboard(query, company, accessToken);` -  this will fetch data and create a svg div with visualization, just add it to the div you want.
+  5) In the HTML file create the divs with IDs mentioned in query.chart.id
+  6) Call `dashboard(query, company, accessToken);` -  this will fetch data and create a svg div with visualization, just add it to the div you want.
 
 ## <a name="ChartsAvailable"> Charts Available: </a>
   1) Bubble Chart - type : 'bubble' (name to be mentioned in query.chart.type)
