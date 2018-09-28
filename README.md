@@ -22,7 +22,7 @@ Make it easier for developers to create their own visualization using D3 and Ado
       - company : org's name for e.g. adobe-io-solutions-demo    
       - accessToken : Token from step 1      
      [Refer sample code](#SampleCode)
-  4) In the HTML file create the divs with IDs mentioned in query.chart.id
+  4) In the HTML file add D3 CDN and create the divs with IDs mentioned in query.chart.id
   5) Call `dashboard(query, company, accessToken);` -  this will fetch data and create a svg div with visualization, just add it to the div you want.
 
 ## <a name="ChartsAvailable"> Charts Available: </a>
@@ -74,6 +74,7 @@ Make it easier for developers to create their own visualization using D3 and Ado
     <head>
       <meta charset="utf-8"/>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://d3js.org/d3.v4.min.js"></script>
       <script src="./d3-dashboard-api.min.js"></script>
       <script src="./sample.js"></script>
     </head>

@@ -10,8 +10,6 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-const d3 = require('d3v4');
-
 class PieChart { 
     constructor() {
         this.margin = {top: 20, right: 20, bottom: 30, left: 80};
