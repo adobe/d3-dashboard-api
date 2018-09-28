@@ -24,13 +24,8 @@ Make it easier for developers to create their own visualization using D3 and Ado
       - company : org's name for e.g. adobe-io-solutions-demo    
       - accessToken : Token from step 1      
      [Refer sample code](#SampleCode)
-<<<<<<< HEAD
-  4) In the HTML file add D3 CDN and create the divs with IDs mentioned in query.chart.id
-  5) Call `dashboard(query, company, accessToken);` -  this will fetch data and create a svg div with visualization, just add it to the div you want.
-=======
-  5) In the HTML file create the divs with IDs mentioned in query.chart.id
+  5) In the HTML file add D3 CDN and create the divs with IDs mentioned in query.chart.id
   6) Call `dashboard(query, company, accessToken);` -  this will fetch data and create a svg div with visualization, just add it to the div you want.
->>>>>>> 548bbfda16fd5e6b6e89f0533f26da33c6142c17
 
 ## <a name="ChartsAvailable"> Charts Available: </a>
   1) Bubble Chart - type : 'bubble' (name to be mentioned in query.chart.type)
